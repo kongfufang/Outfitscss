@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>穿搭速递</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			box-sizing: border-box;
+		}
+
+		body {
+			width: 1472px;
+			background-color: #FFF9ED;
+		}
+
+		.header {
+			width: 100%;
+			height: 131px;
+			margin: 0 auto;
+			background: url('./images/head_bg.jpg') repeat-x;
+			border-bottom: 3px solid grey;
+		}
+
+		.header ul {
+			margin: 0 auto;
+			width: 980px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.header a {
+			display: block;
+			width: 119px;
+			height: 91px;
+			text-decoration: none;
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+			line-height: 67px;
+			padding-right: 10px;
+		}
+
+		.header a:hover {
+			background-image: url('./images/xuanfu.png');
+		}
+
+		.bannner {
+			width: 980px;
+			margin: 0 auto;
+			line-height: 0;
+		}
+
+		.style_bg {
+			width: 980px;
+			height: 345px;
+			padding: 10px 36px 5px;
+			background-color: rgb(255, 85, 0);
+		}
+
+		.style_bg .style {
+			width: 908px;
+			height: 330px;
+			background-color: #fff;
+			padding: 8px 10px 8px 6px;
+			display: flex;
+		}
+
+		.bannner .one {
+			width: 279px;
+			height: 169px;
+			background-color: black;
+		}
+
+
+
+		.one a {
+			display: block;
+			text-decoration: none;
+			color: #fff;
+			line-height: 169px;
+			text-align: right;
+		}
+
+		.active:hover {
+			background-color: orange;
+		}
+
+		.one span {
+			margin-right: 23px;
+		}
+
+		.one li:nth-child(1) {
+			margin: 0 0 8px;
+		}
+
+		.one li:nth-child(2) {
+			height: 137px;
+			background-color: black;
+		}
+
+		.one li:nth-child(2) a {
+			line-height: 137px;
+		}
+
+		.two {
+			margin-left: 5px;
+			width: 279px;
+			height: 313px;
+		}
+
+		.two li:nth-child(1) {
+			height: 117px;
+			margin: 0 0 8px;
+			background-color: black;
+		}
+
+		.two a {
+			display: block;
+			text-decoration: none;
+			color: #fff;
+			line-height: 117px;
+			text-align: right;
+		}
+
+		.two span {
+			margin-right: 23px;
+		}
+
+		.two li:nth-child(2) {
+			height: 188px;
+			background-color: black;
+		}
+
+		.two li:nth-child(2) a {
+			line-height: 188px;
+		}
+
+		.three {
+			width: 322px;
+			height: 314px;
+			margin-left: 5px;
+		}
+
+		.three li {
+			height: 322px;
+			background-color: black;
+		}
+
+		.three a {
+			display: block;
+			text-decoration: none;
+			color: #fff;
+			line-height: 322px;
+			text-align: right;
+		}
+
+		.three span {
+			margin-right: 23px;
+		}
+
+		.bannner .title {
+			width: 259px;
+			height: 45px;
+			color: #fff;
+			margin: 80px 0 0;
+			background-color: #ea4c46;
+			font-size: 20px;
+			line-height: 45px;
+			text-align: center;
+		}
+
+		.current {
+			width: 971px;
+			height: 362px;
+			padding: 13px 0 0 20px;
+			background-color: #fff;
+		}
+
+		.current ul {
+			display: flex;
+		}
+
+		.current ul li {
+			width: 230.6px;
+			height: 330px;
+			margin-right: 8px;
+			border: 1px solid #ea9046d8;
+		}
+
+		.current ul li h2 {
+			width: 230.6px;
+			font-size: 22px;
+			height: 66px;
+			line-height: 66px;
+			color: #7a7a7a;
+			text-align: center;
+		}
+
+		.current .buy {
+			width: 230.6px;
+			height: 38px;
+			background-color: #f3734e;
+		}
+
+		.current ul li a {
+			display: block;
+			line-height: 38px;
+			text-align: right;
+			margin-right: 60px;
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.boder {
+			border: 1px solid #ea9046d8;
+		}
+
+		.footer {
+			height: 153px;
+			background-color: black;
+			margin-top: 65px;
+			padding-top: 50px;
+		}
+
+		.footer p {
+			color: #fff;
+			text-align: center;
+			font-size: 14px;
+			line-height: 26px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<ul>
+			<li class="logo"><img src="./images/logo.png" alt=""></li>
+			<li><a href="">穿搭速递</a></li>
+			<li><a href="">时尚大片</a></li>
+			<li><a href="">星着装</a></li>
+			<li><a href="">时尚圈</a></li>
+			<li><a href="">时尚专栏</a></li>
+			<li><a href="">会员/登陆</a></li>
+		</ul>
+	</div>
+	<div class="bannner">
+		<img src="./images/banner.jpg" alt="">
+		<div class="style_bg">
+			<div class="style">
+				<ul class="one">
+					<li><img src="./images/pic01.jpg" alt="" align="left"><a href="" class="active"> <span>明星风尚</span></a></li>
+					<li> <img src="./images/pic02.jpg" alt="" align="left"><a href="" class="active"><span>时尚博主</span></a></li>
+				</ul>
+				<ul class="two">
+					<li><img src="./images/pic03.jpg" alt="" align="left"><a href="" class="active"> <span>流行搭配</span></a></li>
+					<li> <img src="./images/pic04.jpg" alt="" align="left"><a href="" class="active"><span>精选秀场</span></a></li>
+				</ul>
+				<ul class="three">
+					<li><img src="./images/pic05.jpg" alt="" align="left"><a href="" class="active"> <span>环球街拍</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<h2 class="title">潮流前沿 / Tidal current</h2>
+		<div class="current">
+			<ul>
+				<li><img src="./images/match01.jpg" alt="" class="boder">
+					<h2>潮流饰品</h2>
+					<div class="buy"><img src="./images/gouwu.jpg" alt="" align="left"><a href="">快速购买通道</a> </div>
+				</li>
+				<li><img src="./images/match02.jpg" alt="" class="boder">
+					<h2>时尚女鞋</h2>
+					<div class="buy"><img src="./images/gouwu.jpg" alt="" align="left"><a href="">快速购买通道</a> </div>
+				</li>
+				<li><img src="./images/match03.jpg" alt="" class="boder">
+					<h2>精品包包</h2>
+					<div class="buy"><img src="./images/gouwu.jpg" alt="" align="left"><a href="">快速购买通道</a> </div>
+				</li>
+				<li><img src="./images/match04.jpg" alt="" class="boder">
+					<h2>百搭衣帽</h2>
+					<div class="buy"><img src="./images/gouwu.jpg" alt="" align="left"><a href="">快速购买通道</a> </div>
+				</li>
+			</ul>
+		</div>
+
+
+	</div>
+	<div class="footer">
+		<p>Copyright © 2006-2016 CHAOLIUFUSHIcom, All rights reserved.</p>
+
+		<p>2001-2018，版权所有 潮流服饰 85CP备13385453</p>
+	</div>
+</body>
+
+</html>
